@@ -115,42 +115,35 @@ section{
 }
 .row-items{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, 200px);
+	grid-gap: 1rem;
 	align-items: center;
-	text-align: center;
-	margin-top: 5rem;
+	margin-top: 1rem;
 }
 .container-box{
-	background: var(--bg-color);
-	border: 1px solid #f0eded;
-	padding: 50px 10px;
-	border-radius: 4px;
-	transition: all 1s ease 0s;
-	cursor: pointer;
+	position: flex;
 }
-.container-img img{
-	height: 85px;
-	width: 85px;
-	padding: 15px;
-	background: var(--bg-color);
-	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
-	border-radius: 4px;
-	margin-bottom: 15px;
-	cursor: pointer;
+.container-box img{
+	position: flex;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+	transition: all .3s cubic-bezier(.495,.05,.55,.95);
 }
-.container-box h4{
-	font-size: 24px;
-	font-weight: 600;
-	margin-bottom: 8px;
+.container-box h5{
+	position: flex;
+	font-size: 18px;
+	font-weight: 500;
 }
 .container-box p{
-	font-size: 15px;
+	position: flex;
+	font-size: 14px;
+	font-weight: 500;
 	color: var(--second-color);
 }
+
 .container-box:hover{
-	box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
-	border: 1px solid transparent;
 	transform: translateY(-3px);
 }
 
@@ -253,28 +246,29 @@ section{
 	cursor: pointer;
 }
 
-.newsletter{
+.menubar{
+	padding: 30px 0;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	grid-gap: 3rem;
 }
-.news-text h2{
+.menubar-text h2{
 	font-size: var(--h2-font);
 	margin-bottom: 5px;
 }
-.news-text p{
+.menubar-text p{
 	font-size: var(--p-font);
 	color: var(--second-color);
 	line-height: 30px;
 }
-.newsletter form{
+.menubar form{
 	max-width: 100%;
 	width: 450px;
 	position: relative;
 }
-.newsletter form input:first-child{
+.menubar form input:first-child{
 	display: inline-block;
 	width: 100%;
 	padding: 20px 150px 20px 30px;
@@ -283,7 +277,7 @@ section{
 	border: none;
 	border-radius: 15px;
 }
-.newsletter form input:last-child{
+.menubar form input:last-child{
 	display: inline-block;
 	position: absolute;
 	outline: none;
