@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ngetrip | Paket Trip</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	<link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2b6928e4a7.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -29,60 +30,95 @@
 
 	<!--container--->
 	<section class="container">
-		<div class="text">
+		<div class="title-trip">
 			<h2>Paket Trip</h2>
 		</div>
 
-		<div class="menubar">
-			<div class="send">
-				<form>
-					<input type="text" placeholder="Cari" required>
-					<input type="submit" value="">
-				</form>
+		<div class="filter">
+			<div class="filter-item">
+				<h4>Destinasi</h4>
+				<div class="search_wrap search_wrap_1">
+					<div class="search_box">
+						<input type="text" class="input" placeholder="Tempat/Kota">
+						<div class="btn btn_common">
+							<i class="fas fa-search"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="filter-item">
+				<h4>Jenis Paket</h4>
+				<select class="select" id="type-paket">
+					<option value="1">Semua</option>
+					<option value="2">Wisata Alam</option>
+					<option value="3">Tur Air</option>
+					<option value="4">Mendaki Gunung</option>
+				</select>
+			</div>
+
+			<div class="filter-item">
+				<h4>Harga</h4>
+				<select class="select" id="harga-paket">
+					<option value="1">Semua</option>
+					<option value="2">0 - Rp. 200.000</option>
+					<option value="3">Rp. 200.000 - Rp. 500.000</option>
+					<option value="4">Rp. 500.000 - Rp. 1.000.000</option>
+					<option value="5">Rp. 1.000.000 - Rp. 2.500.000</option>
+					<option value="6">Rp. 2.500.000 - Rp. 5.000.000</option>
+					<option value="7"> > Rp. 5.000.000</option>
+				</select>
 			</div>
 		</div>
-
-		<div class="row-items">
-			<div class="container-box">
-				<img src="img/img-5.jpg">
+		
+		<div class="packet">
+			<div class="packet-box">
+				<img src="img/packet-1a.jpeg">
 				<h5>Sailing Komodo 3D2N</h5>
 				<p>Rp. 2.500.000</p>
 			</div>
 
-			<div class="container-box">
-				<img src="img/img-5.jpg">
-				<h5>Sailing Komodo 3D2N</h5>
-				<p>Rp. 2.500.000</p>
+			<div class="packet-box">
+				<img src="img/packet-2.jpeg">
+				<h5>Tour Sehari di Nusa Penida</h5>
+				<p>Rp. 150.000</p>
 			</div>
 
-			<div class="container-box">
-				<img src="img/img-5.jpg">
-				<h5>Sailing Komodo 3D2N</h5>
-				<p>Rp. 2.500.000</p>
+			<div class="packet-box">
+				<img src="img/packet-3.jpeg">
+				<h5>Bromo Sunrise</h5>
+				<p>Rp. 250.000</p>
 			</div>
 
-			<div class="container-box">
-				<img src="img/img-5.jpg">
-				<h5>Sailing Komodo 3D2N</h5>
-				<p>Rp. 2.500.000</p>
+			<div class="packet-box">
+				<img src="img/packet-4.jpeg">
+				<h5>Tour Private Karimun Jawa</h5>
+				<p>Rp. 2.405.000</p>
 			</div>
 
-			<div class="container-box">
-				<img src="img/img-5.jpg">
-				<h5>Sailing Komodo 3D2N</h5>
-				<p>Rp. 2.500.000</p>
+			<div class="packet-box">
+				<img src="img/packet-5.jpeg">
+				<h5>3D2N Tour Lembongan</h5>
+				<p>Rp. 3.150.000</p>
 			</div>
 
-			<div class="container-box">
-				<img src="img/img-5.jpg">
-				<h5>Sailing Komodo 3D2N</h5>
-				<p>Rp. 2.500.000</p>
+			<div class="packet-box">
+				<img src="img/packet-6.jpg">
+				<h5>Rinjani Outdoor Service</h5>
+				<p>Rp. 1.999.000</p>
 			</div>
 
-			<div class="container-box">
-				<img src="img/img-5.jpg">
-				<h5>Sailing Komodo 3D2N</h5>
-				<p>Rp. 2.500.000</p>
+			<div class="packet-box">
+				<img src="img/packet-7.jpg">
+				<h5>Ungaran Outdoor Service</h5>
+				<p>Rp. 649.000</p>
+			</div>
+
+			<div class="packet-box">
+				<img src="img/packet-8.jpg">
+				<h5>Binaya Outdoor Service</h5>
+				<p>Rp. 3.999.000</p>
 			</div>
 		</div>
 	</section>
